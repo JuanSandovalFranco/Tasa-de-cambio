@@ -1,3 +1,7 @@
+const fetch = (...args) =>
+  import('node-fetch').then(({ default: fetch }) => fetch(...args));
+
+
 exports.getTasaDeCambios = async (req, res, next) => {
   const responseCurrency = await fetch(
     "https://openexchangerates.org/api/latest.json?app_id=f82fbc62c8894edcbfa8de710a742254",

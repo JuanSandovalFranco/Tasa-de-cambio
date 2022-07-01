@@ -20,11 +20,8 @@ app.use(express.static(path.join(__dirname, "build")));
 app.use("/api/", cors(), router);
 
 
-app.all("*" , (err,req,res, next) => {
+app.all("*" , (err,req,res) => {
     res.status = 500
-
-
-    next()
     
 })
 
