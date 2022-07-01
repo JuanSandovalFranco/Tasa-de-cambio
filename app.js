@@ -19,6 +19,15 @@ app.use(express.static(path.join(__dirname, "build")));
 
 app.use("/api/", cors(), router);
 
+
+app.all("*" , (err,req,res, next) => {
+    res.status = 500
+
+
+    next()
+    
+})
+
 const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
