@@ -1,0 +1,46 @@
+*,*::after,*::before{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+html{
+
+    color: rgb(59, 59, 59);
+
+}
+
+
+body{
+    font-family: "Roboto" , "sans-serif";
+}
+
+
+.main-title{
+    font-size: 5rem;
+    text-align: center;
+}
+
+
+h2{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+
+.data{
+    font-size: 5rem;
+}
+
+.cont-main{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    align-items: center;
+
+}
+
+
