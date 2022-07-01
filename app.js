@@ -19,7 +19,7 @@ app.use(express.static(path.join(__dirname, "build")));
 
 app.use("/api/", cors(), router);
 
-const PORT = 8000 || 5000;
+const PORT = process.env.PORT || 8000;
 
 app.listen(PORT, () => {
   console.log("Listen on port " + PORT);
